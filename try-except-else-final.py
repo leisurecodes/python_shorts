@@ -1,7 +1,8 @@
+# Try-Except-Else-Finally Blocks
 try:
     # Try block: Code that might raise an error
-    number = int(input("Enter a number: "))
-    result = 10 / number
+    n = int(input("Enter number n: "))
+    result = 10 / n
     print(f"\nResult is: {result}")
 
 except ValueError as v:
