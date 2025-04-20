@@ -17,7 +17,7 @@ Each folder or file here corresponds to a bite-sized Python snippet shown in my 
 ## ▶️ Watch the Code in Action
 
 Subscribe and explore all the shorts here:  
-🔗 [youtube.com/@leisurecodes1206](https://youtube.com/@leisurecodes1206)
+🔗 [youtube.com/@leisurecodes1206/shorts](https://youtube.com/@leisurecodes1206/shorts)
 
 > 🎥 New Python snippets posted regularly. Stay tuned!
 
