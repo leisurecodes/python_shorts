@@ -1,20 +1,25 @@
+# try except else finally blocks
 try:
     # code that can give error goes here
     num = int(input("Enter integer num: "))
-    result = 10 / num
+    r = 10 / num
 
 except ZeroDivisionError:
-    # runs if num is zero (division by zero)
-    print("Can't divide by zero!")
+    # runs if num is zero - division by zero
+    print("Can't divide by zero.")
 
 except ValueError:
     # runs if the input is not an integer
-    print("Invalid input! Enter valid number.")
+    print("Invaid input! Enter valid num.")
+
+except Exception as e:
+    # deals with any unexpected error
+    print(f"Caught unexpected error: {e}")
 
 else:
-    # runs if try block runs without exceptions
-    print(f"Success! The result is: {result}")
+    # runs if try bloc runs without exceptions
+    print(f"Success! Result: {r}")
 
 finally:
     # always runs
-    print("Execution complete. Thank you!")
+    print("Execution Complete. Thanks!")
