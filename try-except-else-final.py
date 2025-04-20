@@ -1,24 +1,20 @@
-# Try-Except-Else-Finally Blocks
 try:
-    # Try block: Code that might raise an error
-    n = int(input("Enter number n: "))
-    result = 10 / n
-    print(f"\nResult is: {result}")
+    # code that can give error goes here
+    num = int(input("Enter integer num: "))
+    result = 10 / num
 
-except ValueError as v:
-    # This runs if input is not a number
-    print(f"\n{v}: \nEnter a valid number.")
+except ZeroDivisionError:
+    # runs if num is zero (division by zero)
+    print("Can't divide by zero!")
 
-except ZeroDivisionError as z:
-    # This runs if the number is zero
-    print(f"\n{z}: \nCan't divide by zero.")
+except ValueError:
+    # runs if the input is not an integer
+    print("Invalid input! Enter valid number.")
 
-except:
-    # This deals any unexpected Errors
-    print("\nThis block catch any error. " \
-          "Used to deal with unexpected errors.")
-    
+else:
+    # runs if try block runs without exceptions
+    print(f"Success! The result is: {result}")
+
 finally:
-    # This block always runs, no matter what
-    print("\nThis is the 'finally' block. " \
-          "It always executes.")
+    # always runs
+    print("Execution complete. Thank you!")
